@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            font-family: arial;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite o seu nome: ')
+        var salario = window.prompt('Digite seu salario: ')
+        document.write(`Ola, ${nome}! seu nome tem ${nome.length} letras </br>`)
+        document.write(`Seu nome em maiusculo resulta em ${nome.toUpperCase()} </br>`)
+        document.write(`Seu nome em minusculo resulta em ${nome.toLowerCase()} </br>`)
+        document.write(`Seu salario em Real: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
