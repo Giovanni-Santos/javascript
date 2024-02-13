@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores 2.0</title>
+</head>
+<style>
+    .bloco{
+        display: flex;
+        gap: 10px;
+    }
+</style>
+<body>
+    <h1>Insira valores para somar: </h1>
+    
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    
+    <input type="submit" value="Somar" id="click">
+
+    <div class="bloco">
+        <p>Resultado:</p>
+        <p id="result">0</p>
+    </div>
+    <script>
+        const resp = document.getElementById('result')
+        const num1 = document.getElementById('num1')
+        const num2 = document.getElementById('num2')
+        const click = document.getElementById('click')
+        click.addEventListener('click', somar)
+
+        function somar()
+        {
+            const n1 = Number(num1.value)
+            const n2 = Number(num2.value)
+            let soma = n1 + n2
+            resp.innerHTML = soma
+        }
+    </script>
+</body>
+</html>
