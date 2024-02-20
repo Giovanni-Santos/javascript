@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condicoes em JS</title>
+    <title>DETRAN</title>
 </head>
 <body>
+    <h1>Sistema de Multas</h1>
+
+    Velocidade do carro: <input type="text" id="velocidade">
+    <input type="submit" value="Verificar" id="clicar"> Km/h
+
+    <div>
+        <p>Resultado: </p>
+        <p id="resposta"></p>
+    </div>
     
+    <script>
+        const velocidade = document.getElementById('velocidade')
+        const clicou = document.getElementById('clicar')
+        const resp = document.getElementById('resposta')
+
+        clicou.addEventListener('click', resultado)
+
+        function resultado(){
+            const vel = Number(velocidade.value)
+            resp.innerHTML = 'Sua velocidade e de: ' + vel + 'Km/h'
+            if(vel > 60){
+                resp.innerHTML += '<p>Voce ultrapassou o limite de velocidade, voce foi MULTADO!!!</p>'
+            }
+            resp.innerHTML += '<p>Dirija sempre com CINTO de Seguranca</p>'
+        }
+
+    </script>
 </body>
 </html>
