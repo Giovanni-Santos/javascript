@@ -14,7 +14,7 @@ function verificar(){
     const res = document.querySelector('#res')//Adicionando o campo da resposta final
 
     //Verificando se o usuario digitou um valor valido
-    if(fano.value.length == 0 || Number(fano.value) > ano){
+    if(fano.value == 0 || fano.value > ano){
         window.alert('[ERRO] Verifique os dados e tente novamente!')//usuario digitou 0 ou data futura
     }else{
         //Criando variaveis dentro da funcao
