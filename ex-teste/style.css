@@ -47,7 +47,3 @@ input:hover{
 input:active{
     transform: translate(5%, 5%);
 }
-
-.teste{
-    display: none;
-}
