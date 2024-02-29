@@ -28,6 +28,12 @@ footer{
 
 }
 
+#result{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 #start, #step, #end{
     border-radius: 10px;
     width: 100px;
