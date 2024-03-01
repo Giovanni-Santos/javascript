@@ -1,21 +1,10 @@
 const button = document.getElementById('botao')
-const result = document.getElementById('result')
+const res = document.getElementById('res')
 
-button.addEventListener('click', text)
+button.addEventListener('click', contar)
 
-function text(){
-    let start = document.getElementById('start').value
-    let step = document.getElementById('step').value
-    let end = document.getElementById('end').value
+function contar(){
     
-    start = Number(start)
-    step = Number(step)
-    end = Number(end)
-
-    while(start<=end)
-    {
-        result.innerHTML += '👉' + start
-        start=start+step
-    }
-    result.innerHTML += '👉🏴'
 }
+
+//👉🏴
