@@ -6,6 +6,11 @@ body{
     font-size: 1.3em;
 }
 
+header{
+    color: white;
+    text-align: center;
+}
+
 section{
     background-color: white;
     border-radius: 10px;
